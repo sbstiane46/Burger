@@ -1,0 +1,15 @@
+<h1>Have a burger!</h1>
+<h2>Choose your burger</h2>
+<ul>
+    {{#the burgers}}
+    {{#done devoured}}
+    <li>
+        <button class="devoured" data-id="{{eaten.id}}" class="results">Eat!</button>
+        <button class="submit" data-del="{{eaten.id}}" class="delete">Delete</button>
+    </li>
+    {{/the}}
+    {{/done}}
+
+</ul>
+
+<h2>Eat another burger!</h2>
